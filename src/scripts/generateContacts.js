@@ -4,7 +4,7 @@ import { createFakeContact } from '../utils/createFakeContact.js';
 
 const generateContacts = async (number) => {
   let createdContactArray = [];
-  let parsedData = [];
+  let parsedData = null;
   try {
     const data = await fs.readFile(PATH_DB, 'utf-8');
     parsedData = JSON.parse(data);
